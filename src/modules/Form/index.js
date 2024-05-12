@@ -40,7 +40,7 @@ const Form = ({
   return (
     <div className="bg-light h-screen flex items-center justify-center">
         <div className=" bg-white w-[600px] h-[800px] shadow-lg rounded-lg flex flex-col justify-center items-center">
-            <div className=" text-9xl font-extrabold justify-center">Welcome {isSignInPage && 'Back'}</div>
+            <div className=" text-7xl font-extrabold justify-center">Welcome {isSignInPage && 'Back'}</div>
             <div className=" text-xl font-light mb-14">{isSignInPage ? 'Sign in to get explored' : 'Sign up to get started'}</div>
             <form className="flex flex-col items-center w-full" onSubmit={(e) => handleSubmit(e)}>
             { !isSignInPage && <Input label="Full name" name="name" placeholder="Enter your full name" className="mb-6 w-[75%]" value={data.fullName} onChange={(e) => setData({ ...data, fullName: e.target.value }) } /> }
